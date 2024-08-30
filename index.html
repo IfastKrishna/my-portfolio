@@ -17,11 +17,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
-      /* * {
+      * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-      } */
+      }
+
+      .container {
+        overflow: hidden;
+      }
       /* Flexbox adjustment */
       .profile-container {
         display: flex;
@@ -44,6 +48,11 @@
       .py-2 {
         padding-top: 2rem;
         padding-bottom: 2rem;
+      }
+
+      .my-2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
       }
 
       .py-4 {
@@ -95,6 +104,25 @@
             height: 400px;
         }
 
+        .instruction-page {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10rem;
+        }
+
+         .none {
+        display: none;
+      }
+
+      .block {
+        display: block;
+      }
+
+
+
       /* On small screens, stack the image on top and text below */
       @media only screen and (max-width: 600px) {
         .profile-container {
@@ -116,16 +144,12 @@
         .achievement-card {
             height: 230px;
         }
+         .instruction-page {
+            padding: 0 2rem;
+         }
       }
 
-      .none {
-        display: none;
-      }
-
-      .block {
-        display: block;
-      }
-
+     
       
 
       /* On medium and large screens, place text on the left and image on the right */
@@ -145,7 +169,7 @@
   </head>
   <body>
 
-   `<div class="flex align-items-center justify-content-center flex-direction-column" style="height: 100vh; width: 100%; padding: 0 150px;">
+   `<div class="flex align-items-center justify-content-center flex-direction-column instruction-page">
         
         <h1 class="red-text accent-2" data-aos="zoom-in">Welcome Everyone</h1>
         <h4 class="gray-text accent-2" data-aos="zoom-out-up">Thank you for visiting my portfolio website!</h4>
@@ -403,14 +427,14 @@
             <h3 class="center" id="achievements">Achievements</h3>
 
             <div class="row">
-                 <div class="col left s12 m7" data-aos="zoom-out-right">
+                 <div class="col left s12 m7 my-2" data-aos="zoom-out-right">
                     <div class="card achievement-card"> 
                        <div class="card-image">
                         <img class="materialboxed responsive-img" src="certificate-alpha-ready-batch-1-660d6c126a79afa2f80624c6-1.png" alt="trophy" />
                        </div>
                     </div>
                 </div>
-                <div class="col right s12 m7" data-aos="zoom-out-left">
+                <div class="col right s12 m7 my-2" data-aos="zoom-out-left">
                     <div class="card achievement-card"> 
                        <div class="card-image">
                         <img class="materialboxed responsive-img" src="cloudinaryNodeJsDev_certificate-1.png" alt="trophy" />
@@ -418,7 +442,7 @@
                     </div>
                 </div>
 
-                 <div class="col left s12 m7" data-aos="zoom-out-right">
+                 <div class="col left s12 m7 my-2" data-aos="zoom-out-right">
                     <div class="card achievement-card"> 
                        <div class="card-image">
                         <img class="materialboxed responsive-img" src="javascript_basic certificate-1.png" alt="trophy" />
