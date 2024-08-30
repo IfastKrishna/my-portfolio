@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Import AOS CSS -->
+    <link rel="stylesheet" href="./aos-master/dist/aos.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } */
+      /* Flexbox adjustment */
+      .profile-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+      }
+
+       
+
+      .text-justify {
+        text-align: justify;
+      }
+
+      .py-2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      .py-4 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .justify-content-center {
+        justify-content: center;
+      }
+
+      .flex-direction-column {
+        flex-direction: column;
+      }
+
+      .justify-between {
+            justify-content: space-between;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+        .gap-0-5 {
+            gap: 0.5rem;
+        }
+
+        .gap-1 {
+            gap: 1rem;
+        }
+
+
+        .gap-2 {
+            gap: 2rem;
+        }
+
+        .gap-4 {
+            gap: 4rem;
+        }
+
+        .skill-icon {
+            width: 144px;
+        }
+
+        .achievement-card {
+            height: 400px;
+        }
+
+      /* On small screens, stack the image on top and text below */
+      @media only screen and (max-width: 600px) {
+        .profile-container {
+          flex-direction: column-reverse;
+        }
+
+        .skill-icon{
+            width: 100px;
+        }
+
+        .gap-2 {
+            gap: 0.5rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .achievement-card {
+            height: 230px;
+        }
+      }
+
+      .none {
+        display: none;
+      }
+
+      .block {
+        display: block;
+      }
+
+      
+
+      /* On medium and large screens, place text on the left and image on the right */
+      @media only screen and (min-width: 601px) {
+        .text-section {
+          order: 1;
+        }
+        .image-section {
+          order: 2;
+        }
+        .skill-icon {
+            width:120px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+   `<div class="flex align-items-center justify-content-center flex-direction-column" style="height: 100vh; width: 100%; padding: 0 150px;">
+        
+        <h1 class="red-text accent-2" data-aos="zoom-in">Welcome Everyone</h1>
+        <h4 class="gray-text accent-2" data-aos="zoom-out-up">Thank you for visiting my portfolio website!</h4>
+        <p class="">
+            I’m glad you’re here. To explore more of my work, simply click the button below or start scrolling down. You'll discover additional sections filled with detailed information, visuals, and interactive elements that showcase my projects and skills.
+        </p>
+        <a class="btn-floating btn-large cyan pulse" onclick="scrollDown()"><i class="material-icons">arrow_downward</i></a>
+
+    </div>
+
+
+     <nav class="sticky">
+      <div class="nav-wrapper container">
+        <a href="#" class="left brand-logo">Krishna</a>
+        <a href="#" data-target="mobile-demo" class="right sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul id="nav-mobile" class="nav right hide-on-med-and-down">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#project">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- container -->
+    <div class="container">
+      <div class="row profile-container" id="home">
+        <!-- Text section -->
+        <div class="col s12 m4 text-section" data-aos="fade-left">
+          <h1>Hello, <span class="inline">I'm Krishna</span></h1>
+          <p>
+            I am a professional full-stack web app developer and a clean and
+            consistent UI developer.
+          </p>
+          <button class="waves-effect waves-light btn red "><i class="material-icons left">person</i>Hire me</button>
+        </div>
+        <!-- Image section -->
+        <div class="col s12 m8 image-section" data-aos="fade-right">
+          <img
+            class="materialboxed responsive-img"
+            src="profile.png"
+            alt="Profile Image"
+          />
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+    <div class="red red lighten-5 py-2">
+        <div class="container">
+        <div id="about" class="card waves-effect waves-teal" data-aos="zoom-in">
+        <div class="card-content">
+          <h2 class="center">About Me</h2>
+          <p class="text-justify">
+            I am a professional full-stack web app developer and a clean and
+            consistent UI developer. I have a passion for creating and
+            developing new things. I am a quick learner and always eager to
+            learn new technologies. I have a good understanding of the software
+            development life cycle and I am always ready to take on new
+            challenges. I excel at problem-solving and thrive in fast-paced
+            environments where innovation and creativity are key. My experience
+            spans a wide range of technologies, and I am always on the lookout
+            for opportunities to improve and refine my skills. I am dedicated to
+            writing clean, efficient code and am committed to delivering
+            high-quality software solutions. Working collaboratively in a team
+            or independently, I am driven to meet project goals and exceed
+            expectations.
+          </p>
+        </div>
+        </div>  
+    </div>
+    </div>
+
+    <div class="container">
+        <h3 class="center" id="skills">Skills</h3>
+        <div class="row">
+
+          <div class="col s12 m6" data-aos="fade-right">
+            <div class="card">
+                <div class="card-content row flex align-items-center">
+                    <div class="col s6">
+                        <img src="icons8-html-logo.svg" class="skill-icon" alt="html" />
+                    </div>
+                    <div class="col s6">
+                        <h4>HTML</h4>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6" data-aos="fade-left">
+            <div class="card">
+                <div class="card-content row flex align-items-center">
+                    <div class="col s6">
+                        <img src="icons8-css-logo.svg" class="skill-icon" alt="css" />
+                    </div>
+                    <div class="col s6">
+                        <h4>CSS</h4>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6" data-aos="fade-right">
+            <div class="card">
+                <div class="card-content row flex align-items-center">
+                    <div class="col s6">
+                        <img src="icons8-javascript.svg" class="skill-icon" alt="js" />
+                    </div>
+                    <div class="col s6">
+                        <h4>JS</h4>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6" data-aos="fade-left">
+            <div class="card">
+                <div class="card-content row flex align-items-center">
+                    <div class="col s6">
+                        <img src="icons8-react-native.svg" class="skill-icon" alt="react js" />
+                    </div>
+                    <div class="col s6">
+                        <h4>REACT JS</h4>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+           <div class="col s12 m6" data-aos="fade-right">
+                <div class="card">
+                    <div class="card-content row flex align-items-center">
+                        <div class="col s6">
+                            <img src="icons8-github.svg" class="skill-icon" alt="HTML" />
+                        </div>
+                        <div class="col s6">
+                            <h4>GITHUB</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6" data-aos="fade-left">
+                <div class="card">
+                    <div class="card-content row flex align-items-center">
+                        <div class="col s5">
+                            <img src="icons8-node-js.svg" class="skill-icon" alt="HTML" />
+                        </div>
+                        <div class="col s7">
+                            <h4>NODE JS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6" data-aos="fade-right">
+                <div class="card">
+                    <div class="card-content row flex align-items-center">
+                        <div class="col s5">
+                            <img src="icons8-express-js.svg" class="skill-icon" alt="HTML" />
+                        </div>
+                        <div class="col s7">
+                            <h4>EXPRESS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6" data-aos="fade-left">
+                <div class="card">
+                    <div class="card-content row flex align-items-center">
+                        <div class="col s5">
+                            <img src="icons8-mongodb.svg" class="skill-icon" alt="HTML" />
+                        </div>
+                        <div class="col s7">
+                            <h4>MONGODB</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="col s12 m6" data-aos="fade-right">
+                <div class="card">
+                    <div class="card-content row flex align-items-center">
+                        <div class="col s5">
+                            <img src="icons8-bootstrap-logo.svg" class="skill-icon" alt="HTML" />
+                        </div>
+                        <div class="col s7">
+                            <h4>BOOTSTRAP</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6" data-aos="fade-left">
+                <div class="card">
+                    <div class="card-content row flex align-items-center">
+                        <div class="col s5">
+                            <img src="icons8-tailwind-css.svg" class="skill-icon" alt="HTML" />
+                        </div>
+                        <div class="col s7">
+                            <h4>TAILWIND</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6" data-aos="fade-right">
+                <div class="card">
+                    <div class="card-content row flex align-items-center">
+                        <div class="col s5">
+                            <img src="icons8-materialize.svg" class="skill-icon" alt="HTML" />
+                        </div>
+                        <div class="col s7">
+                            <h4>MATERIALIZE</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6" data-aos="fade-left">
+                <div class="card">
+                    <div class="card-content row flex align-items-center">
+                        <div class="col s5">
+                            <img src="nextjs-icon.svg" class="skill-icon" alt="HTML" />
+                        </div>
+                        <div class="col s7">
+                            <h4>NEXT JS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="red red lighten-5 py-2">
+        <div class="container">
+            <h3 class="center" id="achievements">Achievements</h3>
+
+            <div class="row">
+                 <div class="col left s12 m7" data-aos="zoom-out-right">
+                    <div class="card achievement-card"> 
+                       <div class="card-image">
+                        <img class="materialboxed responsive-img" src="certificate-alpha-ready-batch-1-660d6c126a79afa2f80624c6-1.png" alt="trophy" />
+                       </div>
+                    </div>
+                </div>
+                <div class="col right s12 m7" data-aos="zoom-out-left">
+                    <div class="card achievement-card"> 
+                       <div class="card-image">
+                        <img class="materialboxed responsive-img" src="cloudinaryNodeJsDev_certificate-1.png" alt="trophy" />
+                       </div>
+                    </div>
+                </div>
+
+                 <div class="col left s12 m7" data-aos="zoom-out-right">
+                    <div class="card achievement-card"> 
+                       <div class="card-image">
+                        <img class="materialboxed responsive-img" src="javascript_basic certificate-1.png" alt="trophy" />
+                       </div>
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 class="center" id="project">Projects</h3>
+        <div class="row">
+            <div class="col s12 m6" data-aos="zoom-out-right">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="rajmandir.png">
+                    </div>
+                    <div class="card-action">
+                        <a href="https://system.rajmandirhypermarket.com/auth/login">Go There</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6" data-aos="zoom-out-left">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="rajmandir.png">
+                    </div>
+                    <div class="card-action">
+                        <a href="https://system.rajmandirhypermarket.com/auth/login">Go There</a>
+                    </div>
+                </div>
+            </div>
+             <div class="col s12 m6" data-aos="zoom-out-right">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="rajmandir.png">
+                    </div>
+                    <div class="card-action">
+                        <a href="https://system.rajmandirhypermarket.com/auth/login">Go There</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6" data-aos="zoom-out-left">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="rajmandir.png">
+                        
+                    </div>
+                    <div class="card-action">
+                        <a href="https://system.rajmandirhypermarket.com/auth/login">Go There</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <footer class="page-footer">
+        <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+            <h5 class="white-text">Krishna Kumar</h5>
+            <p class="grey-text text-lighten-4">I am a professional full-stack web app developer and a clean and consistent UI developer.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+             <a href="#" class="grey-text text-lighten-4 flex align-items-center gap-0-5">
+                <img src="./assets/icons/github.svg"  width="16" /> Github
+            </a>
+            <a href="#" class="grey-text text-lighten-4 flex align-items-center gap-0-5">
+                <img src="./assets/icons/linkedin.svg "  width="16" /> Linkedin
+            </a>
+            <a href="#" class="grey-text text-lighten-4 flex align-items-center gap-0-5">
+                <img src="./assets/icons/indeed.svg"  width="16" /> Indeed
+            </a>
+            <a href="#"  class="grey-text text-lighten-4 flex align-items-center gap-0-5">
+                <img src="./assets/icons/youtube.svg"  width="16" /> Youtube
+            </a>
+            </div>
+        </div>
+        </div>
+        <div class="footer-copyright">
+        <div class="container">
+        © 2024 Copyright by Krishna
+        <a href="#" class="grey-text text-lighten-4 right">Mores</a>
+        </div>
+        </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Import aos js -->
+    <script src="./aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".sidenav");
+        var elems2 = document.querySelectorAll(".materialboxed");
+
+        M.Sidenav.init(elems);
+        M.Materialbox.init(elems2);
+      });
+
+      const navMenus = document.querySelectorAll(".nav>li");
+
+      navMenus.forEach((menu) => {
+        menu.addEventListener("click", navMenuClick);
+      });
+
+      function navMenuClick(e) {
+        navMenus.forEach((menu) => {
+          menu.classList.remove("active");
+        });
+        e.currentTarget.classList.add("active");
+      }
+
+      navMenus.forEach((menu) => {
+        if (menu.firstElementChild.href == window.location.href) {
+          menu.classList.add("active");
+        }
+      });
+
+      function scrollDown() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+  </body>
+</html>
