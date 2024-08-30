@@ -275,7 +275,7 @@
             I am a professional full-stack web app developer and a clean and
             consistent UI developer.
           </p>
-          <button class="waves-effect waves-light btn  red lighten-1 my-2 "><i class="material-icons left">person</i>Hire me</button>
+          <button class="waves-effect waves-light btn  red lighten-1 my-2 " id="whatsappMessageButton"><i class="material-icons left">person</i>Hire me</button>
         </div>
         <!-- Image section -->
         <div class="col s12 m8 image-section" data-aos="fade-right">
@@ -673,6 +673,12 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e)
     applyTheme(e.matches ? 'dark' : 'light');
   }
 });
+
+const whatsappMessageButton = document.getElementById('whatsappMessageButton');
+whatsappMessageButton.addEventListener('click', () => {
+  window.open('https://wa.me/919905242174?message=Hello', '_blank');
+});
+
 
 
 
