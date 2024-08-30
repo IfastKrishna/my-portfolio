@@ -121,6 +121,10 @@
         display: block;
       }
 
+      .h-screen {
+        height: 100vh;
+      } 
+
 
 
       /* On small screens, stack the image on top and text below */
@@ -169,17 +173,19 @@
   </head>
   <body>
 
-   `<div class="flex align-items-center justify-content-center flex-direction-column instruction-page">
+    <div class="container">
+        <div class="flex align-items-center justify-content-center flex-direction-column h-screen">
         
-        <h1 class="red-text accent-2" data-aos="zoom-in">Welcome Everyone</h1>
-        <h4 class="gray-text accent-2" data-aos="zoom-out-up">Thank you for visiting my portfolio website!</h4>
-        <p class="">
+        <h1 class="red-text accent-2" data-aos="zoom-out-left">Welcome Everyone</h1>
+        <h4 class="gray-text accent-2" data-aos="zoom-out-right">Thank you for visiting my portfolio website!</h4>
+        <p class="" data-aos="zoom-out">
             I’m glad you’re here. To explore more of my work, simply click the button below or start scrolling down. You'll discover additional sections filled with detailed information, visuals, and interactive elements that showcase my projects and skills.
         </p>
-        <a class="btn-floating btn-large  red lighten-1 pulse my-2" onclick="scrollDown()"><i class="material-icons">arrow_downward</i></a>
+        <a class="btn-floating btn-large  red lighten-1 pulse my-2" data-aos="fade-up" onclick="scrollDown()"><i class="material-icons">arrow_downward</i></a>
 
     </div>
 
+    </div>
 
      <nav class="sticky">
       <div class="nav-wrapper container">
