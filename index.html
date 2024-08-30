@@ -11,6 +11,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
     <!-- Import AOS CSS -->
     <link rel="stylesheet" href="./aos-master/dist/aos.css" />
     <!--Let browser know website is optimized for mobile-->
@@ -21,11 +25,16 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Baskervville SC", serif;
+        /* font-weight: 400;
+        font-style: normal; */
       }
 
       .container {
-        overflow: hidden;
+        overflow-x: hidden;
       }
+    
+     
       /* Flexbox adjustment */
       .profile-container {
         display: flex;
@@ -153,8 +162,46 @@
          }
       }
 
-     
+      [data-theme="dark"] body {
+        background-color: #212121;
+        color: white;
+      }
+
+      [data-theme="dark"] .card {
+        background-color: #424242;
+      }
+
+      [data-theme="dark"] .red-lighten-5  {
+        background-color: #424242;
+      }
+
+      [data-theme="dark"] .sidenav {
+            background-color: #424242;
+            color: #ff5252;
+      }
+
+      [data-theme="dark"] .sidenav a {
+            color: #fff;
+      }
+
+      [data-theme="dark"] .red-lighten-5-card {
+        background-color: #212121;
+      }
+
+      [data-theme="light"] .card {
+        background-color: #fff;
+      }
       
+
+      [data-theme="light"] .red-lighten-5-card {
+        background-color: #fff;
+      }
+
+      [data-theme="light"] .red-lighten-5 {
+        background-color: #ffebee;
+      }
+
+    
 
       /* On medium and large screens, place text on the left and image on the right */
       @media only screen and (min-width: 601px) {
@@ -168,7 +215,6 @@
             width:120px;
         }
       }
-
     </style>
   </head>
   <body>
@@ -176,13 +222,13 @@
     <div class="container">
         <div class="flex align-items-center justify-content-center flex-direction-column h-screen">
         
-        <h1 class="red-text accent-2" data-aos="zoom-out-left">Welcome Everyone</h1>
+        <h1 class="red-text" data-aos="zoom-out-left">Welcome Everyone</h1>
         <h4 class="gray-text accent-2" data-aos="zoom-out-right">Thank you for visiting my portfolio website!</h4>
         <p class="" data-aos="zoom-out">
             I’m glad you’re here. To explore more of my work, simply click the button below or start scrolling down. You'll discover additional sections filled with detailed information, visuals, and interactive elements that showcase my projects and skills.
         </p>
         <a class="btn-floating btn-large  red lighten-1 pulse my-2" data-aos="fade-up" onclick="scrollDown()"><i class="material-icons">arrow_downward</i></a>
-
+        
     </div>
 
     </div>
@@ -200,18 +246,23 @@
           <li><a href="#achievements">Achievements</a></li>
           <li><a href="#project">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <a class="grey darken-3 btn btn-small btn-floating waves-effect" id="theme-toggle">Toggle Dark Mode</a>
         </ul>
       </div>
     </nav>
 
     <!-- sidebar -->
     <ul class="sidenav" id="mobile-demo">
+      <li style="padding-left: 30px;">
+        <h4 >Krishna</h4>
+      </li>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#project">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
+        <a style="margin-left: 30px;" class="grey darken-1 btn btn-small waves-effect" id="theme-toggle">Toggle Dark Mode</a>
     </ul>
 
     <!-- container -->
@@ -239,9 +290,9 @@
       </div>
     </div>
 
-    <div class="red red lighten-5 py-2">
+    <div class="red-lighten-5 py-2">
         <div class="container">
-        <div id="about" class="card waves-effect waves-red lighten-1" data-aos="zoom-in">
+        <div id="about" class="card waves-effect waves-red lighten-1 red-lighten-5-card" data-aos="zoom-in">
         <div class="card-content">
           <h2 class="center">About Me</h2>
           <p class="text-justify">
@@ -428,20 +479,20 @@
         </div>
     </div>
 
-    <div class="red red lighten-5 py-2">
+    <div class="py-2 red-lighten-5">
         <div class="container">
             <h3 class="center" id="achievements">Achievements</h3>
 
             <div class="row">
                  <div class="col left s12 m7 my-2" data-aos="zoom-out-right">
-                    <div class="card achievement-card"> 
+                    <div class="card achievement-card red-lighten-5-card"> 
                        <div class="card-image">
                         <img class="materialboxed responsive-img" src="certificate-alpha-ready-batch-1-660d6c126a79afa2f80624c6-1.png" alt="trophy" />
                        </div>
                     </div>
                 </div>
-                <div class="col right s12 m7 my-2" data-aos="zoom-out-left">
-                    <div class="card achievement-card"> 
+                <div class="col right s12 m7 my-2"  data-aos="zoom-out-left">
+                    <div class="card achievement-card red-lighten-5-card""> 
                        <div class="card-image">
                         <img class="materialboxed responsive-img" src="cloudinaryNodeJsDev_certificate-1.png" alt="trophy" />
                        </div>
@@ -449,7 +500,7 @@
                 </div>
 
                  <div class="col left s12 m7 my-2" data-aos="zoom-out-right">
-                    <div class="card achievement-card"> 
+                    <div class="card achievement-card red-lighten-5-card"> 
                        <div class="card-image">
                         <img class="materialboxed responsive-img" src="javascript_basic certificate-1.png" alt="trophy" />
                        </div>
@@ -461,7 +512,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" style="overflow-y: hidden;">
         <h3 class="center" id="project">Projects</h3>
         <div class="row">
             <div class="col s12 m6" data-aos="zoom-out-right">
@@ -580,6 +631,52 @@
                 behavior: 'smooth'
             });
         }
+
+        // Function to apply the theme
+function applyTheme(theme) {
+  if (theme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.getElementById('theme-toggle').innerHTML = '<i class="large material-icons">brightness_4</i>';
+} else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    document.getElementById('theme-toggle').innerHTML = '<i class="large material-icons">brightness_high</i>';
+  }
+  localStorage.setItem('theme', theme);
+}
+
+// Function to toggle between light and dark modes
+function toggleTheme() {
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme === 'dark') {
+    applyTheme('light');
+  } else {
+    applyTheme('dark');
+  }
+}
+
+// Check the user's system preference
+const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const savedTheme = localStorage.getItem('theme');
+
+// Apply the saved theme if it exists, otherwise apply the system preference
+if (savedTheme) {
+  applyTheme(savedTheme);
+} else {
+  applyTheme(systemPrefersDark ? 'dark' : 'light');
+}
+
+// Add event listener to the toggle button
+document.querySelectorAll('#theme-toggle').forEach(b => b.addEventListener('click', toggleTheme));
+
+// Optional: Update the theme if the system preference changes and the user hasn't set a preference
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+  if (!localStorage.getItem('theme')) {
+    applyTheme(e.matches ? 'dark' : 'light');
+  }
+});
+
+
+
     </script>
   </body>
 </html>
