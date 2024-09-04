@@ -65,6 +65,11 @@
         margin-bottom: 2rem;
       }
 
+      .mx-2 {
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+
       .py-4 {
         padding-top: 4rem;
         padding-bottom: 4rem;
@@ -135,6 +140,25 @@
         height: 100vh;
       } 
 
+      .border-radius-1 {
+        border-radius: 0.5rem;
+      }
+
+      .border-radius-2 {
+        border-radius: 1rem;
+      }
+
+      .border-radius-3 {
+        border-radius: 1.5rem;
+      }
+
+      .border-radius-4 {
+        border-radius: 2rem;
+      }
+
+      .hover {
+        transition: all 0.1s;
+      }
 
 
       /* On small screens, stack the image on top and text below */
@@ -235,7 +259,7 @@
 
     </div>
 
-     <nav class="sticky">
+     <nav class="sticky red lighten-1">
       <div class="nav-wrapper container">
         <a href="#" class="left brand-logo">Krishna</a>
         <a href="#" data-target="mobile-demo" class="right sidenav-trigger"
@@ -277,8 +301,8 @@
             I am a professional full-stack web app developer and a clean and
             consistent UI developer.
           </p>
-          <button class="waves-effect waves-light btn  red lighten-1 my-2 " id="whatsappMessageButton"><i class="material-icons left">person</i>Hire me</button>
-          <button class="waves-effect waves-light btn  red lighten-1 " ><i class="material-icons left">file_download</i>Download CV</button>
+          <a class="waves-effect waves-light btn red lighten-1 my-2 border-radius-4 hover" id="whatsappMessageButton"><i class="material-icons left">person</i>Hire me</a>
+          <a href="./assets/Krishna_Kumar.pdf" style="margin-left: 10px;" class="waves-effect waves-light btn  red lighten-1 border-radius-4 hover" download><i class="material-icons left">file_download</i>Download CV</a>
         </div>
         <!-- Image section -->
         <div class="col s12 m6 l7 image-section" data-aos="fade-right">
@@ -294,7 +318,7 @@
     </div>
 
     <div class="red-lighten-5 py-2">
-        <div class="container">
+        <div class="container hover">
         <div id="about" class="card waves-effect waves-red lighten-1 red-lighten-5-card" data-aos="zoom-in">
         <div class="card-content">
           <h2 class="center">About Me</h2>
@@ -319,107 +343,107 @@
     </div>
 
     <div class="container">
-        <h3 class="center" id="skills">Skills</h3>
+        <h5 class="center" id="skills">Skills</h5>
         <div class="row">
 
           <div class="col s12 m6" data-aos="fade-right">
-            <div class="card">
+            <div class="card hover">
                 <div class="card-content flex align-items-center waves-effect waves-red lighten-5">
                     <div class="col s6">
                         <img src="./assets/image/icons8-html-logo.svg" class="skill-icon" alt="html" />
                     </div>
                     <div class="col s6">
-                        <h4>HTML</h4>
+                        <h5>HTML</h5>
                     </div>
                 </div>
             </div>
           </div>
 
           <div class="col s12 m6" data-aos="fade-left">
-            <div class="card">
+            <div class="card hover">
                 <div class="card-content flex align-items-center waves-effect waves-red lighten-5">
                     <div class="col s6">
                         <img src="./assets/image/icons8-css-logo.svg" class="skill-icon" alt="css" />
                     </div>
                     <div class="col s6">
-                        <h4>CSS</h4>
+                        <h5>CSS</h5>
                     </div>
                 </div>
             </div>
           </div>
 
           <div class="col s12 m6" data-aos="fade-right">
-            <div class="card">
+            <div class="card hover">
                 <div class="card-content  flex align-items-center waves-effect waves-red lighten-5">
                     <div class="col s6">
                         <img src="./assets/image/icons8-javascript.svg" class="skill-icon" alt="js" />
                     </div>
                     <div class="col s6">
-                        <h4>JS</h4>
+                        <h5>JS</h5>
                     </div>
                 </div>
             </div>
           </div>
 
           <div class="col s12 m6" data-aos="fade-left">
-            <div class="card">
+            <div class="card hover">
                 <div class="card-content  flex align-items-center waves-effect waves-red lighten-5">
                     <div class="col s6">
                         <img src="./assets/image/icons8-react-native.svg" class="skill-icon" alt="react js" />
                     </div>
                     <div class="col s6">
-                        <h4>REACT JS</h4>
+                        <h5>REACT JS</h5>
                     </div>
                 </div>
             </div>
           </div>
 
            <div class="col s12 m6" data-aos="fade-right">
-                <div class="card">
+                <div class="card hover">
                     <div class="card-content  flex align-items-center waves-effect waves-red lighten-5">
                         <div class="col s6">
                             <img src="./assets/image/icons8-github.svg" class="skill-icon" alt="HTML" />
                         </div>
                         <div class="col s6">
-                            <h4>GITHUB</h4>
+                            <h5>GITHUB</h5>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col s12 m6" data-aos="fade-left">
-                <div class="card">
+                <div class="card hover">
                     <div class="card-content  flex align-items-center waves-effect waves-red lighten-5">
                         <div class="col s5">
                             <img src="./assets/image/icons8-node-js.svg" class="skill-icon" alt="HTML" />
                         </div>
                         <div class="col s7">
-                            <h4>NODE JS</h4>
+                            <h5>NODE JS</h5>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col s12 m6" data-aos="fade-right">
-                <div class="card">
+                <div class="card hover">
                     <div class="card-content flex align-items-center waves-effect waves-red lighten-5">
                         <div class="col s5">
                             <img src="./assets/image/icons8-express-js.svg" class="skill-icon" alt="HTML" />
                         </div>
                         <div class="col s7">
-                            <h4>EXPRESS</h4>
+                            <h5>EXPRESS</h5>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col s12 m6" data-aos="fade-left">
-                <div class="card">
+                <div class="card hover">
                     <div class="card-content flex align-items-center waves-effect waves-red lighten-5">
                         <div class="col s5">
                             <img src="./assets/image/icons8-mongodb.svg" class="skill-icon" alt="HTML" />
                         </div>
                         <div class="col s7">
-                            <h4>MONGODB</h4>
+                            <h5>MONGODB</h5>
                         </div>
                     </div>
                 </div>
@@ -428,52 +452,52 @@
             
 
             <div class="col s12 m6" data-aos="fade-right">
-                <div class="card">
+                <div class="card hover">
                     <div class="card-content flex align-items-center waves-effect waves-red lighten-5">
                         <div class="col s5">
                             <img src="./assets/image/icons8-bootstrap-logo.svg" class="skill-icon" alt="HTML" />
                         </div>
                         <div class="col s7">
-                            <h4>BOOTSTRAP</h4>
+                            <h5>BOOTSTRAP</h5>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col s12 m6" data-aos="fade-left">
-                <div class="card">
+                <div class="card hover">
                     <div class="card-content  flex align-items-center waves-effect waves-red lighten-5">
                         <div class="col s5">
                             <img src="./assets/image/icons8-tailwind-css.svg" class="skill-icon" alt="HTML" />
                         </div>
                         <div class="col s7">
-                            <h4>TAILWIND</h4>
+                            <h5>TAILWIND</h5>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col s12 m6" data-aos="fade-right">
-                <div class="card">
+                <div class="card hover">
                     <div class="card-content  flex align-items-center waves-effect waves-red lighten-5">
                         <div class="col s5">
                             <img src="./assets/image/icons8-materialize.svg" class="skill-icon" alt="HTML" />
                         </div>
                         <div class="col s7">
-                            <h4>MATERIALIZE</h4>
+                            <h5>MATERIALIZE</h5>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col s12 m6" data-aos="fade-left">
-                <div class="card">
+                <div class="card hover">
                     <div class="card-content  flex align-items-center waves-effect waves-red lighten-5">
                         <div class="col s5">
                             <img src="./assets/image/nextjs-icon.svg" class="skill-icon" alt="HTML" />
                         </div>
                         <div class="col s7">
-                            <h4>NEXT JS</h4>
+                            <h5>NEXT JS</h5>
                         </div>
                     </div>
                 </div>
@@ -484,7 +508,7 @@
 
     <div class="py-2 red-lighten-5" >
         <div class="container" style="overflow-y: hidden;">
-            <h3 class="center" id="achievements">Achievements</h3>
+            <h5 class="center" id="achievements">Achievements</h5>
 
             <div class="row">
                  <div class="col left s12 m7 my-2" data-aos="zoom-out-right">
@@ -516,7 +540,7 @@
     </div>
 
     <div class="container" style="overflow-y: hidden;">
-        <h3 class="center" id="project">Projects</h3>
+        <h5 class="center" id="project">Projects</h5>
         <div class="row">
             <div class="col s12 m6" data-aos="zoom-out-right">
                 <div class="card waves-effect waves-red lighten-5">
@@ -561,7 +585,7 @@
         </div>
     </div> 
 
-    <footer class="page-footer">
+    <footer class="page-footer red lighten-1">
         <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -570,16 +594,16 @@
             </div>
             <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Links</h5>
-             <a href="#" class="grey-text text-lighten-4 flex align-items-center gap-0-5">
+             <a href="https://github.com/IfastKrishna" class="grey-text text-lighten-4 flex align-items-center gap-0-5">
                 <img src="./assets/icons/github.svg"  width="16" /> Github
             </a>
-            <a href="#" class="grey-text text-lighten-4 flex align-items-center gap-0-5">
-                <img src="./assets/icons/linkedin.svg "  width="16" /> Linkedin
+            <a href="https://www.linkedin.com/in/krishna-kumar-50925b227/" class="grey-text text-lighten-4 flex align-items-center gap-0-5">
+                <img src="./assets/icons/linkedin.svg"  width="16" /> Linkedin
             </a>
-            <a href="#" class="grey-text text-lighten-4 flex align-items-center gap-0-5">
+            <a href="https://profile.indeed.com/?hl=en_IN&co=IN&from=gnav-homepage" class="grey-text text-lighten-4 flex align-items-center gap-0-5">
                 <img src="./assets/icons/indeed.svg"  width="16" /> Indeed
             </a>
-            <a href="#"  class="grey-text text-lighten-4 flex align-items-center gap-0-5">
+            <a href="https://github.com/IfastKrishna"  class="grey-text text-lighten-4 flex align-items-center gap-0-5">
                 <img src="./assets/icons/youtube.svg"  width="16" /> Youtube
             </a>
             </div>
@@ -597,94 +621,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Import aos js -->
     <script src="./aos-master/dist/aos.js"></script>
-    <script>
-      AOS.init();
-
-      document.addEventListener("DOMContentLoaded", function () {
-        var elems = document.querySelectorAll(".sidenav");
-        var elems2 = document.querySelectorAll(".materialboxed");
-
-        M.Sidenav.init(elems);
-        M.Materialbox.init(elems2);
-      });
-
-      const navMenus = document.querySelectorAll(".nav>li");
-
-      navMenus.forEach((menu) => {
-        menu.addEventListener("click", navMenuClick);
-      });
-
-      function navMenuClick(e) {
-        navMenus.forEach((menu) => {
-          menu.classList.remove("active");
-        });
-        e.currentTarget.classList.add("active");
-      }
-
-      navMenus.forEach((menu) => {
-        if (menu.firstElementChild.href == window.location.href) {
-          menu.classList.add("active");
-        }
-      });
-
-      function scrollDown() {
-            window.scrollTo({
-                top: window.innerHeight,
-                behavior: 'smooth'
-            });
-        }
-
-        // Function to apply the theme
-function applyTheme(theme) {
-  if (theme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    document.getElementById('theme-toggle').innerHTML = '<i class="large material-icons">brightness_4</i>';
-} else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    document.getElementById('theme-toggle').innerHTML = '<i class="large material-icons">brightness_high</i>';
-  }
-  localStorage.setItem('theme', theme);
-}
-
-// Function to toggle between light and dark modes
-function toggleTheme() {
-  const currentTheme = localStorage.getItem('theme');
-  if (currentTheme === 'dark') {
-    applyTheme('light');
-  } else {
-    applyTheme('dark');
-  }
-}
-
-// Check the user's system preference
-const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-const savedTheme = localStorage.getItem('theme');
-
-// Apply the saved theme if it exists, otherwise apply the system preference
-if (savedTheme) {
-  applyTheme(savedTheme);
-} else {
-  applyTheme(systemPrefersDark ? 'dark' : 'light');
-}
-
-// Add event listener to the toggle button
-document.querySelectorAll('#theme-toggle').forEach(b => b.addEventListener('click', toggleTheme));
-
-// Optional: Update the theme if the system preference changes and the user hasn't set a preference
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-  if (!localStorage.getItem('theme')) {
-    applyTheme(e.matches ? 'dark' : 'light');
-  }
-});
-
-const whatsappMessageButton = document.getElementById('whatsappMessageButton');
-whatsappMessageButton.addEventListener('click', () => {
-  window.open('https://wa.me/919905242174?message=Hello', '_blank');
-});
-
-
-
-
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
