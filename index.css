@@ -84,6 +84,10 @@
   gap: 4rem;
 }
 
+.r-270 {
+  transform: rotate(130deg);
+}
+
 .skill-icon {
   width: 144px;
 }
