@@ -99,7 +99,7 @@ const hover = document.querySelectorAll(".hover");
 hover.forEach((h) => {
   h.addEventListener("mouseenter", () => {
     h.classList.add("z-depth-5", "darken-1");
-    h.style.transform = "scale(1.1)";
+    h.style.transform = "scale(1.03)";
     h.style.transition = "0.6s";
   });
   h.addEventListener("mouseleave", () => {

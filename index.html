@@ -17,231 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
     <!-- Import AOS CSS -->
     <link rel="stylesheet" href="./aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="./index.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Baskervville SC", serif;
-        scrollbar-color: #ff5252 #424242;
-        /* font-weight: 400;
-        font-style: normal; */
-      }
-
-      .container {
-        overflow-x: hidden;
-      }
-    
-     
-      /* Flexbox adjustment */
-      .profile-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-      }
-
-      .sticky {
-        position: sticky;
-        top: 0;
-        z-index: 5;
-      }
-
-       
-
-      .text-justify {
-        text-align: justify;
-      }
-
-      .py-2 {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-      }
-
-      .my-2 {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
-
-      .mx-2 {
-        margin-left: 2rem;
-        margin-right: 2rem;
-      }
-
-      .py-4 {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-      }
-
-      .flex {
-        display: flex;
-      }
-
-      .justify-content-center {
-        justify-content: center;
-      }
-
-      .flex-direction-column {
-        flex-direction: column;
-      }
-
-      .justify-between {
-            justify-content: space-between;
-        }
-
-        .align-items-center {
-            align-items: center;
-        }
-        .gap-0-5 {
-            gap: 0.5rem;
-        }
-
-        .gap-1 {
-            gap: 1rem;
-        }
-
-
-        .gap-2 {
-            gap: 2rem;
-        }
-
-        .gap-4 {
-            gap: 4rem;
-        }
-
-        .skill-icon {
-            width: 144px;
-        }
-
-        .achievement-card {
-            height: 400px;
-        }
-
-        .instruction-page {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 0 10rem;
-        }
-
-         .none {
-        display: none;
-      }
-
-      .block {
-        display: block;
-      }
-
-      .h-screen {
-        height: 100vh;
-      } 
-
-      .border-radius-1 {
-        border-radius: 0.5rem;
-      }
-
-      .border-radius-2 {
-        border-radius: 1rem;
-      }
-
-      .border-radius-3 {
-        border-radius: 1.5rem;
-      }
-
-      .border-radius-4 {
-        border-radius: 2rem;
-      }
-
-      .hover {
-        transition: all 0.1s;
-      }
-
-
-      /* On small screens, stack the image on top and text below */
-      @media only screen and (max-width: 600px) {
-        .profile-container {
-          flex-direction: column-reverse;
-        }
-
-        .skill-icon{
-            width: 100px;
-        }
-
-        .gap-2 {
-            gap: 0.5rem;
-        }
-
-        .gap-4 {
-            gap: 1rem;
-        }
-
-        .achievement-card {
-            height: 230px;
-        }
-         .instruction-page {
-            padding: 0 2rem;
-         }
-      }
-
-      [data-theme="dark"] body {
-        background-color: #212121;
-        color: white;
-      }
-
-      [data-theme="dark"] .card {
-        background-color: #424242;
-      }
-
-      [data-theme="dark"] .red-lighten-5  {
-        background-color: #424242;
-      }
-
-      [data-theme="dark"] .sidenav {
-            background-color: #424242;
-            color: #ff5252;
-      }
-
-      [data-theme="dark"] .sidenav a {
-            color: #fff;
-      }
-
-      [data-theme="dark"] .red-lighten-5-card {
-        background-color: #212121;
-      }
-
-      [data-theme="light"] .card {
-        background-color: #fff;
-      }
-      
-
-      [data-theme="light"] .red-lighten-5-card {
-        background-color: #fff;
-      }
-
-      [data-theme="light"] .red-lighten-5 {
-        background-color: #ffebee;
-      }
-
-    
-    
-
-      /* On medium and large screens, place text on the left and image on the right */
-      @media only screen and (min-width: 601px) {
-        .text-section {
-          order: 1;
-        }
-        .image-section {
-          order: 2;
-        }
-        .skill-icon {
-            width:120px;
-        }
-      }
-    </style>
   </head>
   <body>
 
@@ -271,7 +49,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#achievements">Achievements</a></li>
           <li><a href="#project">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
           <a class="grey darken-3 btn btn-small btn-floating waves-effect" id="theme-toggle">Toggle Dark Mode</a>
         </ul>
       </div>
@@ -287,7 +65,7 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#project">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <!-- <li><a href="#contact">Contact</a></li> -->
         <a style="margin-left: 30px;" class="grey darken-1 btn btn-small waves-effect" id="theme-toggle">Toggle Dark Mode</a>
     </ul>
 
@@ -318,7 +96,7 @@
     </div>
 
     <div class="red-lighten-5 py-2">
-        <div class="container hover">
+        <div class="container">
         <div id="about" class="card waves-effect waves-red lighten-1 red-lighten-5-card" data-aos="zoom-in">
         <div class="card-content">
           <h2 class="center">About Me</h2>
