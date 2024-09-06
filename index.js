@@ -33,10 +33,7 @@ navMenus.forEach((menu) => {
 });
 
 function scrollDown() {
-  window.scrollTo({
-    top: window.innerHeight,
-    behavior: "smooth",
-  });
+  window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
 }
 
 // Function to apply the theme
