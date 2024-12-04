@@ -137,6 +137,47 @@
   transition: all 0.1s;
 }
 
+.card-hight {
+  height: 170px;
+  width: 100%;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.project-card:hover .project-info {
+  bottom: 0;
+}
+
+.link-hover {
+  color: royalblue;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.link-hover:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .card-hight {
+    height: 250px;
+  }
+}
+
 /* On small screens, stack the image on top and text below */
 @media only screen and (max-width: 600px) {
   .profile-container {
@@ -187,6 +228,10 @@
 
 [data-theme="dark"] .red-lighten-5-card {
   background-color: #212121;
+}
+
+[data-theme="dark"] .project-info {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 [data-theme="light"] .card {
