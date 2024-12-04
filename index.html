@@ -44,6 +44,62 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
     <link rel="manifest" href="./assets/site.webmanifest">
 
+    <!-- Csss Card hover -->
+       <style>
+            .card-hight {
+                height: 170px;
+                width: 100%;
+            }
+
+            .project-card {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .project-info {
+                position: absolute;
+                bottom: -100%;
+                left: 0;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 20px;
+                transition: bottom 0.3s ease-in-out;
+            }
+
+            .project-card:hover .project-info {
+                bottom: 0;
+            }
+
+            .link-hover {
+                color: royalblue;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+            .link-hover:hover {
+                color: darkblue;
+                text-decoration: underline;
+            }
+
+            @media (min-width: 768px) {
+                .card-hight {
+                    height: 250px;
+                }
+
+                
+
+                .project-info {
+                    bottom: -100%;
+                    left: 0;
+                    width: 100%;
+                    background: rgba(255, 255, 255, 0.9);
+                    padding: 20px;
+                    transition: bottom 0.3s ease-in-out;
+                }
+            }
+
+            
+            </style>
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
@@ -380,22 +436,41 @@
         <h5 class="center" id="project">Projects</h5>
         <div class="row">
             <div class="col s12 m6" data-aos="zoom-out-right" >
-                <div class="card waves-effect waves-red lighten-5">
+                <div class="card waves-effect waves-red lighten-5 card-hight project-card">
                     <div class="card-image" style="object-fit: cover;">
                         <img src="./assets/projects/rock_paper_sessior.png" alt="Rock Paper Scissors Project">
                     </div>
-                    <div class="card-action">
-                        <a href="https://ifastrps.netlify.app">Go There</a>
+                    <div class="card-content project-info">
+                        <span class="card-title">Rock Paper Scissors</span>
+                        <p>This is a classic Rock Paper Scissors game implemented using HTML, CSS, and JavaScript. It features a simple and intuitive user interface.</p>
+                        <a href="https://ifastrps.netlify.app" target="_blank" class="link-hover">Go There</a>
                     </div>
+                
                 </div>
             </div>
-            <div class="col s12 m6" data-aos="zoom-out-left">
-                <div class="card waves-effect waves-red lighten-5">
-                    <div class="card-image">
-                        <img src="./assets/projects/Feedback.png" style="object-fit: cover;" alt="Feedback Project">
+            <div class="col s12 m6" data-aos="zoom-out-right">
+                <div class="card waves-effect waves-red lighten-5 card-hight project-card">
+                    <div class="card-image" style="object-fit: cover;">
+                        <img src="./assets/projects/Feedback.png" alt="Your Project">
                     </div>
-                    <div class="card-action">
-                        <a href="https://ifastfeedback.netlify.app">Go There</a>
+                    <div class="card-content project-info">
+                        <span class="card-title">Feedback Form</span>
+                        <p>Short description of the project goes here. Highlight key features and technologies used.</p>
+                        <a href="https://ifastfeedback.netlify.app" target="_blank" class="link-hover">Go There</a>
+                    </div>
+                  
+                </div>
+            </div>
+
+            <div class="col s12 m6" data-aos="zoom-out-left">
+                <div class="card waves-effect waves-red lighten-5 card-hight project-card">
+                    <div class="card-image">
+                        <img src="./assets/projects/apna-collage-landing.png" style="object-fit: cover;" alt="Feedback Project">
+                    </div>
+                      <div class="card-content project-info">
+                        <span class="card-title">Apna college landing</span>
+                        <p>Short description of the project goes here. Highlight key features and technologies used.</p>
+                        <a href="https://apnacollage-landing.netlify.app" target="_blank" class="link-hover">Go There</a>
                     </div>
                 </div>
             </div>
