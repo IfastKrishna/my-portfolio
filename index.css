@@ -84,6 +84,22 @@
   gap: 4rem;
 }
 
+.gap-5 {
+  gap: 5rem;
+}
+
+.gap-6 {
+  gap: 6rem;
+}
+
+.gap-8 {
+  gap: 8rem;
+}
+
+.gap-10 {
+  gap: 10rem;
+}
+
 .r-270 {
   transform: rotate(130deg);
 }
@@ -171,6 +187,9 @@
   color: darkblue;
   text-decoration: underline;
 }
+
+
+
 
 @media (min-width: 768px) {
   .card-hight {
